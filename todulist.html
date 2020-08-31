@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<style>
+    *{
+        margin:0;
+        padding:0;
+    }
+    /* input{
+    border:0;
+    outline:none;
+} */
+    ol,ul,li{
+    list-style:none;
+    }
+    #app{
+        width:100%;
+        height:50px;
+        /* border:1px solid black; */
+        background:green; 
+    } 
+   .box{
+      
+     width: 600px;
+    height: 50px;
+    text-align: center;
+    margin:0 auto;
+    /* border:1px solid black */
+   }
+   .ipt{
+       width:300px;
+       height:30px;
+       margin-top:8px
+   }
+   .big{
+       width:700px;
+       height:100px;
+       margin:0 auto;
+       margin-top:30px;
+   }
+   .big .btn{
+       float:right;
+   }
+   .big li{
+       font-size:25px;
+
+   }
+   .box2{
+       margin-top:50px;
+   }
+</style>
+</head>
+<body>
+<div id="app">
+    <div class="box">
+        <input class="ipt" v-model="str" @keyup.enter="add" value=""/>
+    </div>
+    <div class="big">
+        <ul class="box1">
+            <li>未完成的事项</li>
+            <li v-for="item in todos" v-if="item.done === false">
+                {{item.text}}
+                <span class="btn">
+                    <button @click="done(item)">未完成</button>
+                    <button @click="del(item)">删除</button>
+                </span>
+                
+            </li>
+            
+        </ul>
+        <ul class="box2">
+            <li>已完成的事项</li>
+            <li v-for="item in todos" v-if="item.done === true">
+                {{item.text}}
+                <span class="btn">
+                    <button @click="doing(item)">已完成</button>
+                    <button @click="del(item)">删除</button>
+                </span>
+               
+    
+            </li>
+        </ul>
+    
+    </div>
+    
+    
+</div>
+
+
+<script>
+    var app = new Vue({
+        el: "#app",
+        data:{
+            str:'',
+            todos:JSON.parse(localStorage.getItem('todos') || '[]')
+        },
+        methods:{
+            add(){
+                this.todos.push({"id":new Date().getTime(),"text":this.str,"done":false});
+                this.save()
+            },
+            done(item){
+                var ind =this.todos.findIndex(obj=>obj.id===item.id);
+                this.todos[ind].done = true;
+                this.save();
+            },
+            doing(item){
+                var ind =this.todos.findIndex(obj=>obj.id===item.id);
+                this.todos[ind].done = false;
+                this.save();
+            },
+            del(item){
+                var ind =this.todos.findIndex(obj=>obj.id===item.id);
+                this.todos.splice(ind,1)
+                this.save();
+            },
+            save(){
+                localStorage.setItem('todos',JSON.stringify(this.todos));
+            }
+        },
+    })
+
+</script>
+</body>
+</html>
