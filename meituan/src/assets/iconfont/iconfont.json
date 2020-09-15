@@ -1,0 +1,170 @@
+{
+  "id": "2053406",
+  "name": "meituan",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "619720",
+      "name": "已售",
+      "font_class": "yishou",
+      "unicode": "e652",
+      "unicode_decimal": 58962
+    },
+    {
+      "icon_id": "13258252",
+      "name": "支付",
+      "font_class": "zhifu",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "14333201",
+      "name": "退款",
+      "font_class": "tuikuan",
+      "unicode": "e700",
+      "unicode_decimal": 59136
+    },
+    {
+      "icon_id": "2336453",
+      "name": "星星",
+      "font_class": "xingxing1-copy-copy-copy",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "16643620",
+      "name": "实心星星",
+      "font_class": "start",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "7254367",
+      "name": "快餐",
+      "font_class": "kuaican",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "3257329",
+      "name": "烧烤",
+      "font_class": "xingzhuangkaobei",
+      "unicode": "e806",
+      "unicode_decimal": 59398
+    },
+    {
+      "icon_id": "5667326",
+      "name": "西餐",
+      "font_class": "xican",
+      "unicode": "e67d",
+      "unicode_decimal": 59005
+    },
+    {
+      "icon_id": "3257526",
+      "name": "海鲜",
+      "font_class": "xingzhuang",
+      "unicode": "e809",
+      "unicode_decimal": 59401
+    },
+    {
+      "icon_id": "4961285",
+      "name": "烤鱼",
+      "font_class": "fish",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "5071414",
+      "name": "火锅",
+      "font_class": "huoguo",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "5218158",
+      "name": "甜点",
+      "font_class": "tiandian",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "16656890",
+      "name": "附近-自助餐",
+      "font_class": "fujin-zizhucan",
+      "unicode": "e6cd",
+      "unicode_decimal": 59085
+    },
+    {
+      "icon_id": "974793",
+      "name": "分类",
+      "font_class": "fenlei",
+      "unicode": "e69e",
+      "unicode_decimal": 59038
+    },
+    {
+      "icon_id": "1315582",
+      "name": "KTV",
+      "font_class": "KTV",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "1985056",
+      "name": "休闲",
+      "font_class": "xiuxian",
+      "unicode": "e64f",
+      "unicode_decimal": 58959
+    },
+    {
+      "icon_id": "2170610",
+      "name": "外卖-1",
+      "font_class": "waimai-",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "3896049",
+      "name": "熊猫",
+      "font_class": "xiongmao",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "5222599",
+      "name": "小吃",
+      "font_class": "icon-test",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "7550294",
+      "name": "酒店",
+      "font_class": "jiudian",
+      "unicode": "e6a0",
+      "unicode_decimal": 59040
+    },
+    {
+      "icon_id": "7843634",
+      "name": "美食",
+      "font_class": "fenzu",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "8222923",
+      "name": "女人",
+      "font_class": "nvren",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "15343575",
+      "name": "周边游",
+      "font_class": "zhoubianyou",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    }
+  ]
+}
